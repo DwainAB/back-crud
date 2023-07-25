@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+</head>
+<body>
+
+    <h1>List of productss</h1>
+
+    <form action="./products/add_product.php" method="POST" enctype="multipart/form-data">
+        <div class="form-exemple">
+            <label for="reference">Réference :</label>
+            <input type="text" name="reference" id="reference">
+        </div>
+        <div class="form-exemple">
+            <label for="image">image :</label>
+            <input required type="file" accept="image/*" name="image">
+        </div>
+        <div class="form-exemple">
+            <label for="description">Description :</label>
+            <input type="text" id="description" name="description">
+        </div>
+        <div class="form-exemple">
+            <label for="priceTaxeIncluse">Price Taxe Incluse :</label>
+            <input type="text" id="priceTaxeIncluse" name="priceTaxeIncluse">
+        </div>
+        <div class="form-exemple">
+            <label for="priceTaxeExcluse">Price Taxe Excluse :</label>
+            <input type="text" id="priceTaxeExcluse" name="priceTaxeExcluse">
+        </div>
+        <div class="form-exemple">
+            <label for="quantity">Quantity :</label>
+            <input type="number" id="quantity" name="quantity">
+        </div>
+        <div class="form-exemple">
+            <label for="quantity">Language :</label>
+            <input type="text" id="quantity" name="langue">
+        </div>
+        <div class="form-exemple">
+            <input type="submit" value="Add product" id="btnSubmitProduct" name="submitProduct">
+        </div>
+    </form>
+    
+</body>
+</html>
